@@ -50,7 +50,7 @@ export function Home() {
   }
 
   return (
-    <Dialog open={isDialogOpen}>
+    <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
       <div className="flex h-screen justify-center">
         <div className="flex w-[600px] flex-col">
           <Header />
