@@ -77,6 +77,7 @@ export function CreateNewContact({
 
   async function handleCreateNewContact(data: CreateNewContactSchema) {
     if (idContact) {
+      onClose()
       mutation.mutate({
         contactId: idContact,
         nome: data.nome,
