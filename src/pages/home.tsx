@@ -15,10 +15,6 @@ export function Home() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [idContact, setIdContact] = useState<string>('')
 
-  const handleContactClick = (id: string) => {
-    setIdContact(id)
-  }
-
   const { data: result } = useQuery({
     queryKey: ['contacts'],
     queryFn: getContacts,
@@ -33,6 +29,11 @@ export function Home() {
 
   const handleFavoriteClick = (contactId: string, isFavorite: boolean) => {
     mutation.mutate({ contactId, favorito: !isFavorite })
+  }
+
+  function updateContact(id: string) {
+    handleOpenDialog()
+    setIdContact(id)
   }
 
   function handleOpenDialog() {
@@ -70,7 +71,7 @@ export function Home() {
                     <Button
                       variant={'outline'}
                       size={'icon'}
-                      onClick={() => handleContactClick(String(contact.id))}
+                      onClick={() => updateContact(String(contact.id))}
                     >
                       <Pencil />
                     </Button>

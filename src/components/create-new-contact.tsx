@@ -24,9 +24,7 @@ import { Label } from './ui/label'
 const createNewContactSchema = z.object({
   nome: z.string().min(1, { message: 'Nome é obrigatório' }),
   email: z.string().email({ message: 'E-mail é obrigatório' }),
-  telefone: z
-    .string()
-    .length(11, { message: 'Telefone deve conter 11 números' }),
+  telefone: z.string(),
 })
 
 type CreateNewContactSchema = z.infer<typeof createNewContactSchema>
