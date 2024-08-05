@@ -1,0 +1,13 @@
+# Meus Contatos
+
+Para rodar o projeto são necessários rodas os seguintes scripts
+
+```sh
+npm i
+npm run dev
+npx json-server db.json
+```
+
+Para simular uma API utilizei o json-server para funcionar é necessário rodar o script acima para conseguir criar listar e editar os contatos
+
+Para rodar o projeto é necessário ter um .env.local com a url que será mostrada assim que rodar o json-server

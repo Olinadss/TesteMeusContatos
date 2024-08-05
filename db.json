@@ -1,0 +1,53 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "nome": "Vanessa dos Santos",
+      "email": "vanessa.santos@gmail.com",
+      "telefone": "(11) 99333-2288",
+      "favorito": true
+    },
+    {
+      "id": "2",
+      "nome": "Maria Leopoldina",
+      "email": "maria.leopoldina@gmail.com",
+      "telefone": "(11) 99422-1115",
+      "favorito": true
+    },
+    {
+      "id": "3",
+      "nome": "João Pedro",
+      "email": "joao.pedro@globo.com",
+      "telefone": "(11) 99333-2288",
+      "favorito": false
+    },
+    {
+      "id": "4",
+      "nome": "Stefany da Silva",
+      "email": "stefany.silva@gmail.com",
+      "telefone": "(15) 98333-9730",
+      "favorito": false
+    },
+    {
+      "id": "5",
+      "nome": "Maria Luiza",
+      "email": "maria.luiza@gmail.com",
+      "telefone": "(81) 99100-3700",
+      "favorito": false
+    },
+    {
+      "id": "6",
+      "nome": "Ana Paula Barbosa",
+      "email": "ana.barbosa@gmail.com",
+      "telefone": "(11) 98766-7033",
+      "favorito": false
+    },
+    {
+      "id": "7",
+      "nome": "Pedro Nogueira",
+      "email": "pedro.nogueira@gmail.com",
+      "telefone": "(11) 98711-3363",
+      "favorito": true
+    }
+  ]
+}
